@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html class="no-js has-navbar-fixed-top">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../bulma.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="./risk.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <nav class="navbar paddingsection is-fixed-top">
+    <div class="navbar-brand">
+      <a class="navbar-item logo-font" href="../index.html">
+        Pink Decoder
+      </a>
+
+
+
+      <div class="navbar-burger burger" data-target="navMenubd-example">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div id="navMenubd-example" class="navbar-menu">
+
+      <div class="navbar-end">
+
+
+
+        <a class="navbar-item " href="../smartmakeupbox/">
+          <span class="bd-emoji">🎨</span> &nbsp;Products
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link  is-active" href="../index.html">
+            Menu
+          </a>
+          <div class="navbar-dropdown ">
+            <a class="navbar-item " href="../riskfactor/">
+              Risk Factor Calculator
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item " href="../sbe/">
+              Self-Breast Examination
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item " href="../smartmakeupbox/">
+              Smart Makeup Box
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item " href="../about/">
+              About Breast Cancer
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item " href="../reference/">
+              References
+            </a>
+
+          </div>
+        </div>
+        <div class="navbar-item">
+          <div class="field is-grouped">
+
+            <p class="control">
+              <a class="button is-primary" style="background: #fe91ca;" href="#">
+                <span class="icon">
+                  <i class="fa fa-download"></i>
+                </span>
+                <span>Download</span>
+              </a>
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </nav>
+
+  <section class="parallax">
+    <div class="area">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="risk" class="section">
+
+    <div id="item-1" class="is-active">
+      <div id="questioner">
+
+        <h2 class="question"> Do you have pain in area of the breast? </h2>
+
+        <div class="select is-danger selector" id="selecter1">
+          <select>
+            <option value="2.505">Yes</option>
+            <option value="0.00">No</option>
+          </select>
+        </div>
+
+      </div>
+      <div id="ender">
+        <button class="pinkButton" id="next" onclick="goNext(1,2)"> Next </button>
+      </div>
+    </div>
+
+    <div id="item-2" class="is-hidden">
+      <div id="questioner">
+
+        <h2 class="question"> Do you have irritation or dimpling of breast? </h2>
+        <div class="select is-danger selector" id="selecter2">
+          <select>
+            <option value="4.00">Yes</option>
+            <option value="0.00">No</option>
+          </select>
+        </div>
+
+      </div>
+      <div id="ender">
+        <button class="pinkButton" id="back" onclick="goBack(2,1)"> Back </button>
+        <button class="pinkButton" id="next" onclick="goNext(2,3)"> Next </button>
+      </div>
+    </div>
+
+    <div id="item-3" class="is-hidden">
+      <div id="questioner">
+
+        <h2 class="question"> Nipple discharge? </h2>
+
+        <div class="select is-danger selector" id="selecter3">
+          <select>
+            <option value="2.415">Yes</option>
+            <option value="0.00">No</option>
+          </select>
+        </div>
+
+      </div>
+      <div id="ender">
+        <button class="pinkButton" id="back" onclick="goBack(3,2)"> Back </button>
+        <button class="pinkButton" id="next" onclick="goNext(3,4)"> Next </button>
+      </div>
+    </div>
+
+    <div id="item-4" class="is-hidden">
+      <div id="questioner">
+        <h2 class="question"> Do you have lump in the breast or underarm? </h2>
+
+        <div class="select is-danger selector" id="selecter4">
+          <select>
+            <option value="3.74">Yes</option>
+            <option value="0.00">No</option>
+          </select>
+        </div>
+
+      </div>
+      <div id="ender">
+        <button class="pinkButton" id="back" onclick="goBack(4,3)"> Back </button>
+        <button class="pinkButton" id="next" onclick="goNext(4,5)"> Next </button>
+      </div>
+    </div>
+
+
+    <div id="item-5" class="is-hidden">
+      <div id="questioner">
+        <h2 class="question"> Any change in tha size or shape of the breast?
+        </h2>
+
+        <div class="select is-danger selector" id="selecter5">
+          <select>
+            <option value="2.84">Yes</option>
+            <option value="0.00">No</option>
+          </select>
+        </div>
+
+      </div>
+      <div id="ender">
+        <button class="pinkButton" id="back" onclick="goBack(5,4)"> Back </button>
+        <button class="pinkButton" id="next" onclick="goNext(5,6)"> Next </button>
+      </div>
+    </div>
+
+    <div id="item-6" class="is-hidden">
+      <div id="questioner">
+        <h2 class="question"> Do you have redness on skin in the nipple area? </h2>
+
+        <div class="select is-danger selector" id="selecter6">
+          <select>
+            <option value="2.365">Yes</option>
+            <option value="0.00">No</option>
+          </select>
+        </div>
+
+      </div>
+      <div id="ender">
+        <button class="pinkButton" id="back" onclick="goBack(6,5)"> Back </button>
+        <button class="pinkButton" id="next" onclick="goNext(6,7)"> Next </button>
+      </div>
+    </div>
+
+
+    <div id="item-7" class="is-hidden">
+      <div id="questioner">
+        <h2 class="question"> Thickening or swelling of part of the breast? </h2>
+
+        <div class="select is-danger selector" id="selecter7">
+          <select>
+            <option value="2.2">Yes</option>
+            <option value="0.00">No</option>
+          </select>
+        </div>
+
+      </div>
+      <div id="ender">
+        <button class="pinkButton" id="back" onclick="goBack(7,6)"> Back </button>
+        <button class="pinkButton" id="next" onclick="submitfrom(7)"> Submit </button>
+      </div>
+    </div>
+
+
+
+    <div id="scoreitem" class="is-hidden">
+      <div class="score">
+
+        <div class="radius"></div>
+        <h1 id="scoreboard">70%</h1>
+        <p class="scoreText">The score depicts that you should have a test</p>
+      </div>
+      <div id="enderScore">
+        <button id="resulter"> Book a Doctor </button>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+  <script type="text/javascript">
+
+    var score = 0.00;
+    var totalscore = 20.065;
+    var qscore = [];
+
+
+    function goNext(from, to) {
+      var prevQ = $("#item-" + from);
+      var nextQ = $("#item-" + to);
+      qscore[(from - 1)] = $('#selecter' + from + " option:selected").val();
+      console.log(qscore);
+      prevQ.removeClass("is-active");
+      prevQ.addClass('is-hidden');
+      nextQ.removeClass("is-hidden");
+      nextQ.addClass('is-active');
+      nextQ.animate({ opacity: '0.4' }, "slow");
+      nextQ.animate({ opacity: '1' }, "slow");
+    }
+
+    function goBack(from, to) {
+      var prevQ = $("#item-" + to);
+      var nextQ = $("#item-" + from);
+      nextQ.removeClass("is-active");
+      nextQ.addClass('is-hidden');
+      prevQ.removeClass("is-hidden");
+      prevQ.addClass('is-active');
+      prevQ.animate({ opacity: '0.4' }, "slow");
+      prevQ.animate({ opacity: '1' }, "slow");
+    }
+
+    function submitfrom(from) {
+      var lastQ = $("#item-" + from);
+      qscore[(from - 1)] = $('#selecter' + from + " option:selected").val();
+      score = 0.000;
+      for (var i in qscore) {
+        score += parseFloat(qscore[i]);
+      }
+      // console.log("result: " + (score * 100 / totalscore) + "%");
+      lastQ.removeClass("is-active");
+      lastQ.addClass('is-hidden');
+      var scoreritem = $('#scoreitem');
+      scoreritem.removeClass("is-hidden");
+      scoreritem.addClass('is-active');
+      scoreritem.animate({ opacity: '0.4' }, "slow");
+      scoreritem.animate({ opacity: '1' }, "slow");
+      var scoreText = $('#scoreboard');
+      scoreText.text(parseInt((score * 100 / totalscore), 10) + "%");
+
+
+      if ((score * 100 / totalscore) > 50) {
+        var resulter = $('#resulter');
+        resulter.text("Book a Doctor");
+        $(document).ready(function() {
+          $("#resulter").click(function() {
+            window.location.href = "../book/";
+          });
+        });
+
+      }else{
+        var resulter = $('#resulter');
+        resulter.text("Check Smart Makeup Box");
+        $(document).ready(function() {
+          $("#resulter").click(function() {
+            window.location.href = "../smartmakeupbox/";
+          });
+        });
+      }
+    }
+
+  </script>
+  <script src="index.js" async defer></script>
+  <script>
+    $(document).ready(function() {
+
+// Check for click events on the navbar burger icon
+$(".navbar-burger").click(function() {
+
+  // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+  $(".navbar-burger").toggleClass("is-active");
+  $(".navbar-menu").toggleClass("is-active");
+
+});
+});
+</script>
+</body>
+
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html class="no-js has-navbar-fixed-top" >
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bulma.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <script>
+    AOS.init();
+  </script>
+  <nav class="navbar paddingsection is-fixed-top">
+    <div class="navbar-brand">
+      <a class="navbar-item logo-font" href="#">
+        Pink Decoder
+      </a>
+
+
+
+      <div class="navbar-burger burger" data-target="navMenubd-example">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div id="navMenubd-example" class="navbar-menu">
+
+      <div class="navbar-end">
+
+
+
+        <a class="navbar-item " href="./smartmakeupbox/">
+          <span class="bd-emoji">🎨</span> &nbsp;Products
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link  is-active" href="#">
+            Menu
+          </a>
+          <div class="navbar-dropdown ">
+            <a class="navbar-item " href="./riskfactor/">
+              Risk Factor Calculator
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item " href="./sbe/">
+              Self-Breast Examination
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item " href="./smartmakeupbox/">
+              Smart Makeup Box
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item " href="./about/">
+              About Breast Cancer
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item " href="./reference/">
+              References
+            </a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <div class="field is-grouped">
+
+            <p class="control">
+              <a class="button is-primary" style="background: #fe91ca;" href="./app/">
+                <span class="icon">
+                  <i class="fa fa-download"></i>
+                </span>
+                <span>Download</span>
+              </a>
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </nav>
+  <section class="parallax">
+    <div class="headercontext paddingsection">
+      <h1>Say Bye to Breast Cancer</h1>
+      <p>An automated early detection system for breast cancer</p>
+
+      <br>
+      <figure style="height: auto;">
+        <img src="./images/header.jpg" alt="breast cancer awareness">
+      </figure>
+
+    </div>
+
+
+    <div class="area">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="solution" class="section">
+    <div class="container has-text-centered paddingsection">
+
+
+      <div data-aos="fade-down-right" data-aos-duration="5000">
+        <figure class="is-96x96">
+          <img class="character"
+            src="character/character.gif" 
+            alt="character for Breast Cancer" />
+        </figure>
+      </div>
+      <h1 class="title">Our Solution</h1>
+      <div class="columns">
+
+        <div class="column solutionholder">
+
+
+          <div data-aos="fade-up" data-aos-duration="3000">
+            <figure class="image is-3by2 carder">
+              <img src="./solutionspic/AR Tech.png" alt="Placeholder image" onclick="window.open('./app/')">
+            </figure>
+
+          </div>
+
+
+
+
+        </div>
+        <div class="column solutionholder">
+
+          <div data-aos="fade-up" data-aos-duration="3000">
+            <figure class="image is-3by2 carder">
+              <img src="./solutionspic/Risk Factor.png" alt="Placeholder image" onclick="window.open('./riskfactor/')">
+            </figure>
+
+          </div>
+
+        </div>
+
+      </div>
+      <div class="columns">
+
+
+        <div class="column solutionholder">
+          <div data-aos="fade-up" data-aos-duration="3000">
+            <figure class="image is-3by2 carder">
+              <img src="./solutionspic/SBE test.png" alt="Placeholder image" onclick="window.open('./sbe/')">
+            </figure>
+
+          </div>
+        </div>
+        <div class="column solutionholder">
+
+          <div data-aos="fade-up" data-aos-duration="3000">
+            <figure class="image is-3by2 carder">
+              <img src="./solutionspic/Machine Learning.png" alt="Placeholder image" onclick="window.open('./ml/')">
+            </figure>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="app" class="section" style="background-color: #ffe0f7; max-height: 100vh;">
+    <div class="container has-text-centered paddingsection">
+
+
+      <div data-aos="zoom-out" data-aos-duration="5000">
+        <figure class="is-96x96">
+          <img class="character"
+           src="character/character.gif" 
+            alt="character for Breast Cancer" />
+        </figure>
+      </div>
+      <h1 class="title">Try Automated Self-Breast Examination</h1>
+      <h2 class="sub-title" style="margin-bottom: 15px;">With Our Makeup Box, You can automatically get accurate score
+        of SBE</h2>
+
+      <div class="sectionfullImageContainer" data-aos="fade-right" data-aos-duration="3000"  >
+        <figure class="image carderforsingle">
+          <img src="./sectionpic/AR Tech.jpg" alt="Placeholder image" onclick="window.open('./app/')">
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="risk" class="section" >
+    <div class="container has-text-centered paddingsection">
+
+
+      <div data-aos="zoom-out" data-aos-duration="5000">
+        <figure class="is-96x96">
+          <img class="character"
+           src="character/character.gif" 
+            alt="character for Breast Cancer" />
+        </figure>
+      </div>
+      <h1 class="title">Risk Factor Calculator</h1>
+      <h2 class="sub-title" style="margin-bottom: 15px;">Try Our Free Risk Factor Calculator within 9 taps</h2>
+
+
+
+      <div id="render" class="sectionfullImageContainer" data-aos="fade-left" data-aos-duration="3000"  >
+        <figure class="image carderforsingle">
+          <img src="./sectionpic/Risk Factor.png" alt="Placeholder image" onclick="window.open('./riskfactor/')">
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="sbe" class="section" style="background-color: #ffe0f7; max-height: 100vh;">
+    <div class="container has-text-centered paddingsection">
+
+
+      <div data-aos="zoom-out" data-aos-duration="5000">
+        <figure class="is-96x96">
+          <img class="character"
+           src="character/character.gif" 
+            alt="character for Breast Cancer" />
+        </figure>
+      </div>
+      <h1 class="title">Self-Breast Examination</h1>
+      <h2 class="sub-title" style="margin-bottom: 15px;">SBE is an essential step to eliminate risk of breast cancer
+      </h2>
+
+
+
+      <div class="sectionfullImageContainer" data-aos="fade-right" data-aos-duration="3000"  >
+        <figure class="image carderforsingle">
+          <img src="sectionpic/SBE.png" alt="Placeholder image" onclick="window.open('./sbe/')">
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="ml" class="section" >
+    <div class="container has-text-centered paddingsection">
+
+
+      <div data-aos="zoom-out" data-aos-duration="5000">
+        <figure class="is-96x96">
+          <img class="character"
+           src="character/character.gif" 
+            alt="character for Breast Cancer" />
+        </figure>
+      </div>
+      <h1 class="title">Detect Tumor Type using Machine Learning</h1>
+      <h2 class="sub-title" style="margin-bottom: 15px;">With our maching learning system, you can find out malignant
+        and benign cancer</h2>
+
+
+
+      <div class="sectionfullImageContainer" data-aos="fade-left" data-aos-duration="3000"  >
+        <figure class="image carderforsingle">
+          <img src="sectionpic/Machine Learning.png" alt="Placeholder image" onclick="window.open('./ml/')">
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  
+
+
+  <section id="banner" class="paddingsection">
+    <div class="container download">
+
+
+      <a class="button" style="color: black;border-radius: 1rem;border: 1px solid #ffbacd;" href="./app/">
+        <span class="icon" style="color: #fe91ca;">
+          <i class="fa fa-download"></i>
+        </span>
+        <span>Download</span>
+      </a>
+
+
+      <a class="button" style="color: black;border-radius: 1rem;border: 1px solid #ffbacd;" href="./smartmakeupbox/">
+        <span class="icon" style="color: #fe91ca;">
+          <i class="fa fa-th-large"></i>
+        </span>
+        <span>Smart Makeup Box</span>
+      </a>
+
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="columns">
+      <div class="column" id="logo-footer">
+        <img src="./images/logo.png" height="60px" width="auto">
+      </div>
+
+      <div class="column">
+        <h2 class="subtitle">Sitemap</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./riskfactor/">Risk Factor Calculator</a></li>
+          <li><a href="./sbe/">Self-Breast Examination</a></li>
+          <li><a href="./ml/">ML Detection</a></li>
+          <li><a href="./smartmakeupbox/">Smart Makeup Box</a></li>
+        </ul>
+      </div>
+
+
+      <div class="column">
+        <h2 class="subtitle">More</h2>
+        <ul>
+          <li><a href="./app">Download Our App</a></li>
+          <li><a href="./book/">Appoint a doctor</a></li>
+        </ul>
+        <br>
+        <div id="socialicon">
+              <figure class="image is-48x48">
+                <img src="images/twitter.png">
+              </figure>
+
+              <figure class="image is-48x48">
+                <img src="images/youtube.png">
+              </figure>
+
+              <figure class="image is-48x48">
+                <img src="images/linkedin.png">
+              </figure>
+
+              <figure class="image is-48x48">
+                <img src="images/github.png">
+              </figure>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+      $(document).ready(function() {
+
+// Check for click events on the navbar burger icon
+$(".navbar-burger").click(function() {
+
+    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+    $(".navbar-burger").toggleClass("is-active");
+    $(".navbar-menu").toggleClass("is-active");
+
+});
+});
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+.texter{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:20px;
+}
+#imger{
+    height: 256px;
+    width: 256px;
+    background: #ffe9f9;
+    border-radius: 50%;
+}
+
+#bookbutton{
+    max-width: 150px;
+}
+#booking {
+    height: 51.7vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    margin-top: 60px;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    #imger{
+        height: 100px;
+        width: 100px;
+        background: #ffe9f9;
+        border-radius: 50%;
+    }
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    #imger{
+        height: 150px;
+        width: 150px;
+        background: #ffe9f9;
+        border-radius: 50%;
+    }
+
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    #imger{
+        height: 100px;
+        width: 100px;
+        background: #ffe9f9;
+        border-radius: 50%;
+    }
+
+    
+  }
+
+  @media(max-width: 767px) { /* <== You can change this break point as per your  needs */
+    .reverse-columns {
+      flex-direction: column-reverse;
+      display: flex;
+    }
+
+    #booking {
+      height: 60.7vh;
+      display: flex;
+      justify-content: center;
+      padding-top: 40px;
+      margin-top: 60px;
+  }
+    .texter{
+           align-items: center;
+			text-align: center;                          
+     }
+  }

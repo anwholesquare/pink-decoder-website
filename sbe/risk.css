@@ -1,0 +1,182 @@
+#questioner{
+    width: 50vh;
+    height: 70vh;
+    background: URL('calculator.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem 1rem 0rem 0rem;
+    padding: 10px;
+    position: relative;
+    margin: 0;
+    box-shadow: 0 -3px 10px 0 rgba(0, 0, 0, .5);
+}
+#risk{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 50px;
+    padding-bottom: 0px;
+}
+
+
+.items{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 0px;
+}
+
+
+#ender{
+    background-color: white;
+    color: #fe91ca;
+    height: 50px;
+    display: flex;
+    max-width: 50vh;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, .4);
+    background: #fe91ca;
+    z-index: 100;
+    border-radius: 0rem 0rem 1rem 1rem;
+    width: 100%;
+}
+
+
+#item-1 #ender {
+    background-color: white;
+    color: #fe91ca;
+    height: 50px;
+    display: flex;
+    max-width: 50vh;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, .4);
+    background: #fe91ca;
+    z-index: 100;
+    border-radius: 0rem 0rem 1rem 1rem;
+    width: 100%;
+}
+.pinkButton{
+    font-size: 15px;
+    border: none;
+    font-weight: bold;
+    background: #fe91ca;
+    color: white;
+
+}
+
+
+.selector {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px!important;
+    padding-left: 20px;
+}
+
+.question{
+    font-size: 25px;
+    color: black;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+.radius{
+    height: 200px;
+    width: 200px;
+    background: white;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 70px;
+    align-items: center;
+    box-shadow: 0 0 50px 0 rgb(232 58 149 / 80%);
+}
+
+.score {
+    width: 50vh;
+    height: 70vh;
+    background: URL('gradient.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem 1rem 1rem 1rem;
+    padding: 10px;
+    position: relative;
+    margin: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+    justify-content: center;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+#enderScore{
+    background-color: white;
+    color: #fe91ca;
+    height: 50px;
+    display: flex;
+    max-width: 50vh;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+    background: #fe91ca;
+    z-index: 100;
+    border-radius: 1rem 1rem 1rem 1rem;
+    width: 100%;
+}
+#resulter{
+    text-decoration: none;
+    border: none;
+    background: #fe91ca;
+    font-size: 25px;
+    color: white;
+}
+#scoreboard{
+    position: absolute;
+    top: 130px;
+    font-size: 70px;
+    color: #fe91ca;
+    font-weight: 200;
+}
+
+.scoreText{
+    position: absolute;
+    top: 310px;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    
+    #questioner{
+        height: 70vh;
+        background: URL('calculator.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 1rem 1rem 0rem 0rem;
+        padding: 10px;
+        position: relative;
+        margin: 0;
+        box-shadow: 0 -3px 10px 0 rgba(0, 0, 0, .5);
+        width: 40vh;
+    }
+    
+  }

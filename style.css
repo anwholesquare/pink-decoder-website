@@ -39,7 +39,7 @@ body {
 }
 
 .headercontext figure img {
-    max-height: 60vh;
+    max-height: 50vh;
     width: auto;
     border-radius: 1rem;
     z-index: 1;
